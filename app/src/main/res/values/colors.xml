@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#96BCB7</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+    <color name="tcsblue">#077FFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="searchbackground">#e0e0e0</color>
+</resources>
