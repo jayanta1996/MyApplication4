@@ -9,84 +9,42 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="?attr/colorPrimary"
-            android:backgroundTint="@color/colorTextPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
-                tools:background="@color/colorTextPrimary"
-                tools:layout_height="40dp"
-                android:layout_above="@+id/tablayout"
-                android:layout_alignParentStart="true" />
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                tools:background="@color/colorTextPrimary"
-                tools:layout_height="40dp"
-                tools:layout_width="75dp"
-                tools:text="HOME"
-                android:layout_above="@+id/tablayout"
-                android:layout_toEndOf="@+id/searchView"
-                android:layout_marginStart="17dp" />
-
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_above="@+id/tablayout"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="50dp"
-            android:gravity="center_vertical"
-            tools:background="@color/searchbackground"
-            tools:fadingEdge="horizontal|vertical"
-            tools:layout_height="40dp"
-            tools:layout_width="150dp" />
-
-
 
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_below="@+id/toolbar"
-            android:background="@color/tcsblue"
-            app:tabIndicatorColor="@color/colorTextPrimary"
-            app:tabSelectedTextColor="@color/colorAccent"
-            app:tabTextColor="@color/colorTextDisable" />
+            android:layout_height="wrap_content"
+
+
+            app:tabBackground="@color/tcsblue"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorTextPrimary"
+            app:tabTextColor="@color/colorTextDisable"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab1"
+            android:icon="@drawable/thumbs_up"
+            style="@style/tab_item"
+            android:text="DO'S"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab2"
+            android:icon="@drawable/thumbs_down"
+            style="@style/tab_item"
+             android:text="DON'TS"/>
+        </android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tablayout"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/tablayout"
-            android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/button"
-            app:srcCompat="@drawable/ic_notifications_black_24dp"
-            tools:background="@color/colorTextPrimary"
-            tools:layout_height="40dp"
-            tools:layout_width="40dp" />
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
 
 
     </RelativeLayout>

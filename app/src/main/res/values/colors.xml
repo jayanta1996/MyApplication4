@@ -2,10 +2,10 @@
 <resources>
 
     <color name="colorAccent">#96BCB7</color>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#077FFF</color>
     <color name="colorTextPrimary">#FFFFFF</color>
     <color name="colorTextDisable">#66FFFFFF</color>
     <color name="tcsblue">#077FFF</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#077FFF</color>
     <color name="searchbackground">#e0e0e0</color>
 </resources>
